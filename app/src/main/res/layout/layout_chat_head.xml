@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/chat_head_root"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/chat_head_default"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_android_circle"
+        tools:ignore="ContentDescription"/>
+
+    <!--Profile image for the chat head.-->
+<!--    <ImageView-->
+<!--        android:id="@+id/chat_head_profile_iv"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:src="@drawable/bubble_image"-->
+<!--        android:layout_toRightOf="@+id/chat_head_default"-->
+<!--        tools:ignore="ContentDescription"/>-->
+
+    <!--Close button-->
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/ic_close"
+        tools:ignore="ContentDescription"/>
+
+    <!--Add button-->
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/add_red"
+        tools:ignore="ContentDescription"/>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/chat_head_fragment"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_margin="50dp"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_below="@+id/chat_head_profile_iv">-->
+<!--        <TextView-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="this is m example"/>-->
+<!--    </LinearLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bubble_list_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/chat_head_default"></android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
